@@ -237,7 +237,9 @@ if __name__ == "__main__":
     setupkw["long_description_content_type"] = "text/x-rst"
     setupkw["license"] = "Apache 2"
     setupkw["packages"] = find_packages(".")
-    setupkw["python_requires"] = ">=3.7"
+# -- modify to support python 3.6.9 on jetson nano    
+#    setupkw["python_requires"] = ">=3.7"
+    setupkw["python_requires"] = ">=3.6"
     setupkw["classifiers"] = [
         "Development Status :: 4 - Beta",
         "Intended Audience :: Developers",
